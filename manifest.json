@@ -1,0 +1,179 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Ed.OPTOTEST/Desktop/Ed's Work/VisualCS/SantecSPA/SantecSPA",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/examples.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/examples.html",
+          "hash": "uEyZZtF35ilXa3oUvb93IPzmUNe5Wp5udbFdFrHov/Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "bbtzYuAVJ918pBtwFmDfshEPaGK854wI9F0Kz+NEXmQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "Ofeh0t0GD3bl57bs58rTptXpdf4azexma+5U0x+CRIs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "wE3a/6w3JImDXrYVmye+PCLwQo/qj/thsPdpO1IqJ4s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/SantecSPA.Connection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SantecSPA.Connection.html",
+          "hash": "1jO83ev8KQmbidMV+/de5jFv2lLDOEQV44m/cUWAFRw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/SantecSPA.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SantecSPA.Data.html",
+          "hash": "lqm5We3rAkF0KylrvTf+UMNz+2LPHSfuBoZg7eiCm/A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/SantecSPA.Instrument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SantecSPA.Instrument.html",
+          "hash": "Yr8zvwh/pFMeYD2C7Yw0cS0IiX/FKUL39KRwKa4L+F8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/SantecSPA.SPAModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SantecSPA.SPAModule.html",
+          "hash": "Kvjfhbhqb3Lr/tfv3Ps8YDI75TQLsKS2MrtubqJzxOY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/SantecSPA.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SantecSPA.Settings.html",
+          "hash": "xqYYigAdb8FCf9ii8pMpEb3OmOhu23wmd+mIipfoXr4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/SantecSPA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SantecSPA.html",
+          "hash": "i3K7ofr1N5f78Q99Ge9+Nf0pUeqV65iYZwj/1YQpWDQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
