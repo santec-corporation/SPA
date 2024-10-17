@@ -2,9 +2,9 @@
 
 ### Settings Error Codes
 
-### `SetOperationSettings()` or `LoadOperationSettingsINI()`
+#### `SetOperationSettings()` or `LoadOperationSettingsINI()`
 
-Get a list of encountered error codes using GetSettingsErrors
+Get a list of encountered error codes using GetSettingsErrors.
 
 -10 = StartWave not in limits <br>
 -11 = StopWave not in limits <br>
@@ -17,7 +17,7 @@ Get a list of encountered error codes using GetSettingsErrors
 
 ### Connection Error Codes
 
-### `LoadConnectionSettingsFromFile()`
+#### `LoadConnectionSettingsFromFile()`
 -1 = File does not exist <br>
 -2 = Invalid file format <br>
 -3 = Unable to parse file <br>
@@ -27,7 +27,7 @@ Get a list of encountered error codes using GetSettingsErrors
 
 ### Instrument Error Codes
 
-### `SetScanSettings()` and `StartScan()`
+#### `SetScanSettings()` and `StartScan()`
 -1 = Unable to read information from device <br>
 -10 = Unable to read information from device <br>
 -14 = Unable to read information from device <br>
@@ -36,6 +36,6 @@ Get a list of encountered error codes using GetSettingsErrors
 -222 = Out of settable range <br>
 int.MinValue = Unexpected exception
 
-### `GetSamplingData()`
--1 = Sample count = 0 <br>
+#### `GetSamplingData()`
+-1 = If Sample count = 0 <br>
 -2 = High-frequency triggering error
