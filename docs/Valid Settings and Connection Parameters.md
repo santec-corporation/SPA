@@ -1,4 +1,4 @@
-### Valid values for Settings INI
+## Valid values for Settings INI
 
 **LimitMinWave <= StartWave <= LimitMaxWave**
 - Floor StartWave to LimitMinWave
@@ -28,17 +28,20 @@
 **Gain: 0, 1, 2, 3, 4** <br>
 0 = auto, 1 = 0 dB, 2 = 4 dB, 3 = 9 dB, 4 = 13 dB
 
+ <br>
 
-
-### Valid values for Connection INI
+## Valid values for Connection INI
 
 **TSL Communication: USB, GPIB, LAN**
 
-If TSL Communication = GPIB, GPIBAddress = 0 - 30 <br>
-If TSL Communication = USB, USBDeviceID > 0 <br>
-If TSL Communication = LAN, IP and Port must be valid <br>
+If _TSL Communication = GPIB_, <br>
+   GPIBAddress = 0 - 30 <br>  <br>
+If _TSL Communication = USB_, <br>
+   USBDeviceID > 0 <br>  <br>
+If _TSL Communication = LAN_, <br>
+   IP and Port must be valid <br>
 
-SPA Device ID must be of form "Dev#" where # is > 1.
+SPA Device ID must be of form "Dev#", where # is > 1.
 
    w2500fm, <br>
    w5pm, <br>
