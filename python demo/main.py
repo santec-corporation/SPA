@@ -2,9 +2,9 @@
 SPA DLL
 python code examples
 
-April 5, 2024 | 16:00:00 JST
+Last updated: Feb 21, 2025 | 16:00:00 JST
 
-@organization: santec Holdings Corp.
+@organization: Santec Holdings Corp.
 """
 
 """
@@ -18,8 +18,8 @@ import clr
 import sys
 
 # Checking and Accessing the DLL (SantecSPA) [make sure the DLL folder is in the same directory as the script]
-assembly_path = r".\DLL"
-sys.path.append(assembly_path)
+dll_path = r"..\sdk"
+sys.path.append(dll_path)
 clr.AddReference(r"SantecSPA")
 
 # Importing the main method from the DLL
