@@ -9,11 +9,24 @@
 The Santec SPA (Swept Photonics Analyzer) SDK is a comprehensive software development kit designed to facilitate the integration and utilization of swept photonics technology in various applications. 
 This SDK provides users with the necessary tools and resources to create innovative solutions that leverage the advanced capabilities of the Santec SPA for precise optical measurement and analysis.
 
+---
 
 ### Supported Instruments
+
 [SPA-100](https://inst.santec.com/products/componenttesting/spa-100)
+
+---
+
+### SDK details
+
+- **SantecSPA.dll**
+  - **Version**: 1.1.1.0
+  
+- **InstrumentDLL.dll**
+  - **Version**: 2.9.0
+
+---
 
 ### Documentation 
 
 [API documentation](https://santec-corporation.github.io/SPA/)
-
