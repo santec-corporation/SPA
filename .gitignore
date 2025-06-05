@@ -4,3 +4,6 @@
 *.txt
 *.pdb
 *.dll.config
+*.pyc
+*.pyi
+*.cfg
