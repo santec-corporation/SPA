@@ -15,6 +15,8 @@ This SDK provides users with the necessary tools and resources to create innovat
 
 [SPA-100](https://inst.santec.com/products/componenttesting/spa-100)
 
+[SPA-110](https://inst.santec.com/products/componenttesting/spa-110)
+
 ---
 
 ### SDK details
