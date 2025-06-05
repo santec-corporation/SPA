@@ -2,3 +2,5 @@
 *.xml
 *.idea
 *.txt
+*.pdb
+*.dll.config
