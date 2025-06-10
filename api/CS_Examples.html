@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Examples ">
+    <meta name="generator" content="docfx 2.59.4.0">
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../api/index.html" title="API Documentation">API Documentation</a>
+                      </li>
+                      <li>
+                          <a href="../api/examples.html" title="Code Examples">Code Examples</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="CS_Examples.html" title="CSExamples" class="">C# Examples</a>
+                    </li>
+                  </ul>
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="Python_SPA_notebook.html" title="SPAPythonExamples" class="">SPA Python Examples</a>
+                    </li>
+                  </ul>
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="Python_SPA_110_notebook.html" title="SPA110PythonExamples" class="">SPA-110 Python Examples</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+
+<h1 id="examples"><strong>Examples</strong></h1>
+
+<h2 id="initialization-and-settings">Initialization and Settings</h2>
+<pre><code class="lang-csharp">SPAModule spa = new SPAModule();
+
+// Initialize and connect to instruments using a connection file
+spa.Initialize(&quot;connection.ini&quot;);
+
+// Initialize and connect to instruments using TSL GPIB on address = 1 and SPA as Dev1
+spa.Initialize(&quot;Dev1&quot;, &quot;GPIB&quot;, 1, 0, 0, null, 0);
+
+// Initialize and connect to instruments using TSL USB device 5 and SPA as Dev1
+spa.Initialize(&quot;Dev1&quot;, &quot;USB&quot;, 0, 5, null, 0);
+
+
+// load SPA Settings from file
+spa.LoadOperationSettingsFromFile(&quot;settings.ini&quot;);
+
+// change individual settings
+spa.SetOperationSettingsValue(&quot;StartWave&quot;, 1500);
+spa.SetOperationSettingsValue(&quot;StopWave&quot;, 1600);
+spa.SetOperationSettingsValue(&quot;GaussianFilter&quot;, true);
+spa.SetOperationSettingsValue(&quot;GaussianRadius&quot;, 0.2);
+spa.SetOperationSettingsValue(&quot;ILRange&quot;, 0.1);
+
+// save changes to settings file
+spa.SaveOperationSettingsToFile(&quot;settings.ini&quot;);
+</code></pre><h2 id="reference-reflectance-reflection-mode">Reference Reflectance (Reflection Mode)</h2>
+<pre><code class="lang-csharp">SPAModule spa = new SPAModule();
+
+// Initialize and connect using connection file
+spa.Initialize(&quot;connection.ini&quot;);
+
+// ...
+
+// Perform a reflection reference scan using the base functions
+
+// Set to Reflection Mode Port 1
+spa.SetOperationSettingsValue(&quot;Port&quot;, 1);
+
+// Set wavelength range
+spa.SetOperationSettingsValue(&quot;StartWave&quot;, 1500);
+spa.SetOperationSettingsValue(&quot;StopWave&quot;, 1600):
+
+// Perform the scan as reference
+spa.Scan(true);		// reference = true
+
+// Process and get the reference
+spa.GetReflectanceReferenceOffset(out reference);
+
+
+// ...
+
+// Perform a reflection reference scan using the top level function
+// Load settings from file instead of setting individually
+
+// Load settings from file
+spa.LoadOperationSettingsFromFile(&quot;settings.ini&quot;);
+ExecuteReferenceReflection(out reference);	// this will perform the scan and the processing
+</code></pre><h2 id="measure-reflectance-reflection-mode">Measure Reflectance (Reflection Mode)</h2>
+<pre><code class="lang-csharp">// Perform a measurement after referencing using the base functions
+
+// Perform the scan as measurement
+spa.Scan();		// reference = false by default
+
+// Process and get the spatial reflectance data x and y values
+spa.GetReflectanceData(out xValues, out yValues);
+
+// ...
+
+// Peform the measurement after referencing using the top level function
+spa.ExecuteReflectionMeasurement(out xValues, out yValues);
+</code></pre><h2 id="finding-peaks">Finding Peaks</h2>
+<pre><code class="lang-csharp">// Instruments initialized in Reflection Mode and reference scan was performed previously
+
+// Set peak finding parameters
+spa.SetOperationSettingsValue(&quot;PeakThreshold&quot;, -60);
+spa.SetOperationSettingsValue(&quot;PeakWidth&quot;, 1.0);
+
+// Find peaks from frontpanel (0 mm) to 4000 mm
+// Using base functions
+
+spa.Scan();
+spa.GetReflectanceData(out xValues, out yValues);
+spa.GetPeaks(0, 4000, out peakList, out peakCount);
+
+// ...
+
+// Find the last 3 peaks between 0 mm and 3000 mm
+// Using top level functions
+
+// Perform the scan, process the data, then find the peaks
+spa.ExecutePeakScan(0, 3000, 1, 3, out peakList);
+
+// ...
+
+// Scan and set the last peak found between 0 mm and 3000 mm as the zero position
+spa.ExecutePositionReference(0, 3000, 1, out refPosition);
+
+// Scan and find the first 5 peaks from the reference position to 4000 mm
+spa.ExecutePeakScan(refPosition, 4000, 0, 5, out peakList);
+
+// Using the last scan (no re-scanning), get the last peak from reference position to 6000 mm
+// then get the relative distance of that peak from the reference position
+spa.MeasurePeakDistance(refPosition, 6000, 1, 1, out peakDistanceList);
+
+// Use an arbitrary position (1000 mm) as the zero position instead of finding a peak
+// Get the distance to the first 5 peaks from the zero position
+spa.MeasurePeakDistance(1000, 6000, 0, 5, out peakDisanceList);	// this will give distances relative to 1000 mm
+</code></pre><h2 id="advanced-peaks">Advanced Peaks</h2>
+<pre><code class="lang-csharp">// Find peaks across multiple regions with different peak thresholds
+// Limit to 10 peaks per region
+
+// Instruments initialized in Reflection Mode and reference scan was performed previously
+
+// Set peak parameters for first region
+spa.SetOperationSettingsValue(&quot;PeakThreshold&quot;, -60);
+spa.SetOperationSettingsValue(&quot;PeakWidth&quot;, 1.0);
+
+// Scan then find first 10 peaks in the region 0 - 1000 mm
+spa.ExecutePeakScan(0, 1000, 0, 10, out peakListRegion1);
+
+// Set peak parameters for second region
+spa.SetOperationSettingsValue(&quot;PeakThreshold&quot;, -40);
+spa.SetOperationSettingsValue(&quot;PeakWidth&quot;, 1.0);
+
+// Use the previous scan and find the first 10 peaks in the region 1000 - 1500 mm
+spa.MeasurePeakDistance(0, 1000, 1500, 0, 10, out peakListRegion2);
+
+
+// Set peak parameters for third region
+spa.SetOperationSettingsValue(&quot;PeakThreshold&quot;, -70);
+spa.SetOperationSettingsValue(&quot;PeakWidth&quot;, 1.0);
+
+// Use the previous scan and find the first 10 peaks in the region 1500 - 2000 mm
+spa.MeasurePeakDistance(0, 1500, 2000, 0, 10, out peakListRegion3);
+</code></pre><h2 id="measure-rl-and-il">Measure RL and IL</h2>
+<pre><code class="lang-csharp">// Instruments initialized and reference scan was performed previously
+
+// measurement scan
+spa.Scan();
+
+// process measurement
+spa.GetReflectanceData(out xValues, out yValues);
+
+// measure RL between 1000 mm and 1100 mm position
+spa.MeasureRL(1000, 1100, out rlValue);
+
+// measure IL between 1000 mm and 1100 mm positions using 0.1 mm averaging width
+spa.SetOperationSettingsValue(&quot;ILRange&quot;, 0.1);
+spa.MeasureIL(1000, 1100, out ilValue);
+</code></pre><h2 id="measure-rl-and-il-for-peaks-found">Measure RL and IL for Peaks Found</h2>
+<pre><code class="lang-csharp">// Instrument initialized and reference scan was performed previously
+
+// Set peak finding parameters
+spa.SetOperationSettingsValue(&quot;PeakThreshold&quot;, -60);
+spa.SetOperationSettingsValue(&quot;PeakWidth&quot;, 1.0);
+
+// Set IL averaging width
+spa.SetOperationSettingsValue(&quot;ILRange&quot;, 0.1);
+
+// Reference to the end of a fiber (length = 1000 m)
+spa.ExecutePositionReference(0, 1000, 1, out refPosition);
+
+// Setup DUT then find first 6 peaks from refPosition to 4000 mm
+spa.ExecutePeakScan(refPosition, 4000, 0, 6, out peakList);
+
+// Iterate through the peakList and calculate RL and IL for each peak
+// Measure IL and RL across a 0.2 mm region centered at the peak
+// Save in a table with distance from refPosition to peak
+// Note: this uses the IL measurement parameters in the settings
+for (int i = 0; i &lt; peakList.Length; i++)
+{
+	spa.MeasureRL(peakList[i] - 0.1, peakList[i] + 0.1, out rlValue);
+	spa.MeasureIL(peakList[i] - 0.1, peakList[i] + 0.1, out ilValue);
+
+	rlTable.Add(peakList[i] - refPosition, rlValue);
+	ilTable.Add(peakList[i] - refPosition, ilValue);
+}
+</code></pre>
+
+                </article>
+          </div>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+      <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

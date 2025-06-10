@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/Ed.OPTOTEST/Desktop/Ed's Work/VisualCS/SantecSPA/SantecSPA",
+  "source_base_path": "D:/Work/Ed's Work/VisualCS/SantecSPA/SantecSPA",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -72,7 +72,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.Data.html",
-          "hash": "lqm5We3rAkF0KylrvTf+UMNz+2LPHSfuBoZg7eiCm/A="
+          "hash": "yLW051CLWVelCo9qTXu0t7ljrN871mvkxXdYyUmGPtc="
         }
       },
       "is_incremental": false,
@@ -84,7 +84,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.Instrument.html",
-          "hash": "Yr8zvwh/pFMeYD2C7Yw0cS0IiX/FKUL39KRwKa4L+F8="
+          "hash": "7oce34jHBBzVet8Q48vrkevpUB/6RdeCSIqtkXlJuxM="
         }
       },
       "is_incremental": false,
@@ -96,7 +96,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.SPAModule.html",
-          "hash": "Kvjfhbhqb3Lr/tfv3Ps8YDI75TQLsKS2MrtubqJzxOY="
+          "hash": "K4Ec+CUHStSto3UdypR/gXPN0BmN1xOADBmrZiOw39U="
         }
       },
       "is_incremental": false,
@@ -108,7 +108,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.Settings.html",
-          "hash": "xqYYigAdb8FCf9ii8pMpEb3OmOhu23wmd+mIipfoXr4="
+          "hash": "S2wzCychCG12INbQN3s2NSOICdKpPER/2zS4YBd0Jy8="
         }
       },
       "is_incremental": false,

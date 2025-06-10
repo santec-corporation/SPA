@@ -251,7 +251,7 @@
   
   <a id="SantecSPA_SPAModule_ExecutePeakScan_" data-uid="SantecSPA.SPAModule.ExecutePeakScan*"></a>
   <h4 id="SantecSPA_SPAModule_ExecutePeakScan_System_Double_System_Double_System_Int32_System_Int32_System_Double____System_Double____" data-uid="SantecSPA.SPAModule.ExecutePeakScan(System.Double,System.Double,System.Int32,System.Int32,System.Double[]@,System.Double[]@)">ExecutePeakScan(Double, Double, Int32, Int32, out Double[], out Double[])</h4>
-  <div class="markdown level1 summary"><p>Perform a Reflection scan, process it, then get the distance from the reference position to the first/last N peaks found within the specified range</p>
+  <div class="markdown level1 summary"><p>Perform a Reflection Measurement scan, process it, then get the distance from the reference position to the first/last N peaks found within the specified range</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -761,6 +761,51 @@ Requires a reference to be connected from output port 1 to port 2.</p>
         <td><span class="xref">System.Double</span>[]</td>
         <td><span class="parametername">transWdlRefDataY</span></td>
         <td><p>Transmission WDL Y-axis data (IL WDL)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Error code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SantecSPA_SPAModule_GetDistanceRangeTable_" data-uid="SantecSPA.SPAModule.GetDistanceRangeTable*"></a>
+  <h4 id="SantecSPA_SPAModule_GetDistanceRangeTable_System_Double____" data-uid="SantecSPA.SPAModule.GetDistanceRangeTable(System.Double[]@)">GetDistanceRangeTable(out Double[])</h4>
+  <div class="markdown level1 summary"><p>Get the table of available distance ranges. Use with SetOperationalSettingValue(&quot;DistanceRange&quot;, value) to select a range from the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDistanceRangeTable(out double[] distanceRangeTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">distanceRangeTable</span></td>
+        <td><p>Table of distance ranges (meters)</p>
 </td>
       </tr>
     </tbody>
@@ -1340,6 +1385,48 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
   </table>
   
   
+  <a id="SantecSPA_SPAModule_GetTslDeviceList_" data-uid="SantecSPA.SPAModule.GetTslDeviceList*"></a>
+  <h4 id="SantecSPA_SPAModule_GetTslDeviceList_System_String____" data-uid="SantecSPA.SPAModule.GetTslDeviceList(System.String[]@)">GetTslDeviceList(ref String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTslDeviceList(ref string[] deviceList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">deviceList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="SantecSPA_SPAModule_Initialize_" data-uid="SantecSPA.SPAModule.Initialize*"></a>
   <h4 id="SantecSPA_SPAModule_Initialize_System_String_" data-uid="SantecSPA.SPAModule.Initialize(System.String)">Initialize(String)</h4>
   <div class="markdown level1 summary"><p>Initialize communication with TSL and SPA using connection settings from INI file</p>
@@ -1723,6 +1810,51 @@ Uses the integration and averaging limits specified in the settings.</p>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">rlValue</span></td>
         <td><p>RL value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Error code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SantecSPA_SPAModule_SaveDSPAFile_" data-uid="SantecSPA.SPAModule.SaveDSPAFile*"></a>
+  <h4 id="SantecSPA_SPAModule_SaveDSPAFile_System_String_" data-uid="SantecSPA.SPAModule.SaveDSPAFile(System.String)">SaveDSPAFile(String)</h4>
+  <div class="markdown level1 summary"><p>Save a DSPA data file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SaveDSPAFile(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Filenaem for DSPA file to create</p>
 </td>
       </tr>
     </tbody>
@@ -2384,6 +2516,33 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Error code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SantecSPA_SPAModule_StopScan_" data-uid="SantecSPA.SPAModule.StopScan*"></a>
+  <h4 id="SantecSPA_SPAModule_StopScan" data-uid="SantecSPA.SPAModule.StopScan">StopScan()</h4>
+  <div class="markdown level1 summary"><p>Stop the current scan and reset from standby mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StopScan()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

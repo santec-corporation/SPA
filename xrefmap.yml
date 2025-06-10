@@ -194,6 +194,19 @@ references:
   isSpec: "True"
   fullName: SantecSPA.Data.DbData
   nameWithType: Data.DbData
+- uid: SantecSPA.Data.DbDataFiltered
+  name: DbDataFiltered
+  href: api/SantecSPA.Data.html#SantecSPA_Data_DbDataFiltered
+  commentId: P:SantecSPA.Data.DbDataFiltered
+  fullName: SantecSPA.Data.DbDataFiltered
+  nameWithType: Data.DbDataFiltered
+- uid: SantecSPA.Data.DbDataFiltered*
+  name: DbDataFiltered
+  href: api/SantecSPA.Data.html#SantecSPA_Data_DbDataFiltered_
+  commentId: Overload:SantecSPA.Data.DbDataFiltered
+  isSpec: "True"
+  fullName: SantecSPA.Data.DbDataFiltered
+  nameWithType: Data.DbDataFiltered
 - uid: SantecSPA.Data.Dr
   name: Dr
   href: api/SantecSPA.Data.html#SantecSPA_Data_Dr
@@ -259,6 +272,19 @@ references:
   isSpec: "True"
   fullName: SantecSPA.Data.RefDbData
   nameWithType: Data.RefDbData
+- uid: SantecSPA.Data.RefDbDataFiltered
+  name: RefDbDataFiltered
+  href: api/SantecSPA.Data.html#SantecSPA_Data_RefDbDataFiltered
+  commentId: P:SantecSPA.Data.RefDbDataFiltered
+  fullName: SantecSPA.Data.RefDbDataFiltered
+  nameWithType: Data.RefDbDataFiltered
+- uid: SantecSPA.Data.RefDbDataFiltered*
+  name: RefDbDataFiltered
+  href: api/SantecSPA.Data.html#SantecSPA_Data_RefDbDataFiltered_
+  commentId: Overload:SantecSPA.Data.RefDbDataFiltered
+  isSpec: "True"
+  fullName: SantecSPA.Data.RefDbDataFiltered
+  nameWithType: Data.RefDbDataFiltered
 - uid: SantecSPA.Data.RefFftData
   name: RefFftData
   href: api/SantecSPA.Data.html#SantecSPA_Data_RefFftData
@@ -606,6 +632,22 @@ references:
   isSpec: "True"
   fullName: SantecSPA.Instrument.GetSpaDeviceList
   nameWithType: Instrument.GetSpaDeviceList
+- uid: SantecSPA.Instrument.GetTslDeviceList(System.String[]@)
+  name: GetTslDeviceList(ref String[])
+  href: api/SantecSPA.Instrument.html#SantecSPA_Instrument_GetTslDeviceList_System_String____
+  commentId: M:SantecSPA.Instrument.GetTslDeviceList(System.String[]@)
+  name.vb: GetTslDeviceList(ByRef String())
+  fullName: SantecSPA.Instrument.GetTslDeviceList(ref System.String[])
+  fullName.vb: SantecSPA.Instrument.GetTslDeviceList(ByRef System.String())
+  nameWithType: Instrument.GetTslDeviceList(ref String[])
+  nameWithType.vb: Instrument.GetTslDeviceList(ByRef String())
+- uid: SantecSPA.Instrument.GetTslDeviceList*
+  name: GetTslDeviceList
+  href: api/SantecSPA.Instrument.html#SantecSPA_Instrument_GetTslDeviceList_
+  commentId: Overload:SantecSPA.Instrument.GetTslDeviceList
+  isSpec: "True"
+  fullName: SantecSPA.Instrument.GetTslDeviceList
+  nameWithType: Instrument.GetTslDeviceList
 - uid: SantecSPA.Instrument.SpaDevice
   name: SpaDevice
   href: api/SantecSPA.Instrument.html#SantecSPA_Instrument_SpaDevice
@@ -703,6 +745,32 @@ references:
   isSpec: "True"
   fullName: SantecSPA.Settings.DispersionCompensation
   nameWithType: Settings.DispersionCompensation
+- uid: SantecSPA.Settings.DistanceRange
+  name: DistanceRange
+  href: api/SantecSPA.Settings.html#SantecSPA_Settings_DistanceRange
+  commentId: P:SantecSPA.Settings.DistanceRange
+  fullName: SantecSPA.Settings.DistanceRange
+  nameWithType: Settings.DistanceRange
+- uid: SantecSPA.Settings.DistanceRange*
+  name: DistanceRange
+  href: api/SantecSPA.Settings.html#SantecSPA_Settings_DistanceRange_
+  commentId: Overload:SantecSPA.Settings.DistanceRange
+  isSpec: "True"
+  fullName: SantecSPA.Settings.DistanceRange
+  nameWithType: Settings.DistanceRange
+- uid: SantecSPA.Settings.DistanceRangeTable
+  name: DistanceRangeTable
+  href: api/SantecSPA.Settings.html#SantecSPA_Settings_DistanceRangeTable
+  commentId: P:SantecSPA.Settings.DistanceRangeTable
+  fullName: SantecSPA.Settings.DistanceRangeTable
+  nameWithType: Settings.DistanceRangeTable
+- uid: SantecSPA.Settings.DistanceRangeTable*
+  name: DistanceRangeTable
+  href: api/SantecSPA.Settings.html#SantecSPA_Settings_DistanceRangeTable_
+  commentId: Overload:SantecSPA.Settings.DistanceRangeTable
+  isSpec: "True"
+  fullName: SantecSPA.Settings.DistanceRangeTable
+  nameWithType: Settings.DistanceRangeTable
 - uid: SantecSPA.Settings.Gain
   name: Gain
   href: api/SantecSPA.Settings.html#SantecSPA_Settings_Gain
@@ -992,6 +1060,19 @@ references:
   isSpec: "True"
   fullName: SantecSPA.Settings.SweepSpeed
   nameWithType: Settings.SweepSpeed
+- uid: SantecSPA.Settings.Thinning
+  name: Thinning
+  href: api/SantecSPA.Settings.html#SantecSPA_Settings_Thinning
+  commentId: P:SantecSPA.Settings.Thinning
+  fullName: SantecSPA.Settings.Thinning
+  nameWithType: Settings.Thinning
+- uid: SantecSPA.Settings.Thinning*
+  name: Thinning
+  href: api/SantecSPA.Settings.html#SantecSPA_Settings_Thinning_
+  commentId: Overload:SantecSPA.Settings.Thinning
+  isSpec: "True"
+  fullName: SantecSPA.Settings.Thinning
+  nameWithType: Settings.Thinning
 - uid: SantecSPA.Settings.WdlResolution
   name: WdlResolution
   href: api/SantecSPA.Settings.html#SantecSPA_Settings_WdlResolution
@@ -1181,6 +1262,22 @@ references:
   isSpec: "True"
   fullName: SantecSPA.SPAModule.ExecuteTransmissionWDLReference
   nameWithType: SPAModule.ExecuteTransmissionWDLReference
+- uid: SantecSPA.SPAModule.GetDistanceRangeTable(System.Double[]@)
+  name: GetDistanceRangeTable(out Double[])
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_GetDistanceRangeTable_System_Double____
+  commentId: M:SantecSPA.SPAModule.GetDistanceRangeTable(System.Double[]@)
+  name.vb: GetDistanceRangeTable(ByRef Double())
+  fullName: SantecSPA.SPAModule.GetDistanceRangeTable(out System.Double[])
+  fullName.vb: SantecSPA.SPAModule.GetDistanceRangeTable(ByRef System.Double())
+  nameWithType: SPAModule.GetDistanceRangeTable(out Double[])
+  nameWithType.vb: SPAModule.GetDistanceRangeTable(ByRef Double())
+- uid: SantecSPA.SPAModule.GetDistanceRangeTable*
+  name: GetDistanceRangeTable
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_GetDistanceRangeTable_
+  commentId: Overload:SantecSPA.SPAModule.GetDistanceRangeTable
+  isSpec: "True"
+  fullName: SantecSPA.SPAModule.GetDistanceRangeTable
+  nameWithType: SPAModule.GetDistanceRangeTable
 - uid: SantecSPA.SPAModule.GetOperationSettingsValue(System.String,System.String@)
   name: GetOperationSettingsValue(String, out String)
   href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_GetOperationSettingsValue_System_String_System_String__
@@ -1341,6 +1438,22 @@ references:
   isSpec: "True"
   fullName: SantecSPA.SPAModule.GetTransmissionWDLData
   nameWithType: SPAModule.GetTransmissionWDLData
+- uid: SantecSPA.SPAModule.GetTslDeviceList(System.String[]@)
+  name: GetTslDeviceList(ref String[])
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_GetTslDeviceList_System_String____
+  commentId: M:SantecSPA.SPAModule.GetTslDeviceList(System.String[]@)
+  name.vb: GetTslDeviceList(ByRef String())
+  fullName: SantecSPA.SPAModule.GetTslDeviceList(ref System.String[])
+  fullName.vb: SantecSPA.SPAModule.GetTslDeviceList(ByRef System.String())
+  nameWithType: SPAModule.GetTslDeviceList(ref String[])
+  nameWithType.vb: SPAModule.GetTslDeviceList(ByRef String())
+- uid: SantecSPA.SPAModule.GetTslDeviceList*
+  name: GetTslDeviceList
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_GetTslDeviceList_
+  commentId: Overload:SantecSPA.SPAModule.GetTslDeviceList
+  isSpec: "True"
+  fullName: SantecSPA.SPAModule.GetTslDeviceList
+  nameWithType: SPAModule.GetTslDeviceList
 - uid: SantecSPA.SPAModule.Initialize(System.String)
   name: Initialize(String)
   href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_Initialize_System_String_
@@ -1447,6 +1560,19 @@ references:
   isSpec: "True"
   fullName: SantecSPA.SPAModule.MeasureRL
   nameWithType: SPAModule.MeasureRL
+- uid: SantecSPA.SPAModule.SaveDSPAFile(System.String)
+  name: SaveDSPAFile(String)
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_SaveDSPAFile_System_String_
+  commentId: M:SantecSPA.SPAModule.SaveDSPAFile(System.String)
+  fullName: SantecSPA.SPAModule.SaveDSPAFile(System.String)
+  nameWithType: SPAModule.SaveDSPAFile(String)
+- uid: SantecSPA.SPAModule.SaveDSPAFile*
+  name: SaveDSPAFile
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_SaveDSPAFile_
+  commentId: Overload:SantecSPA.SPAModule.SaveDSPAFile
+  isSpec: "True"
+  fullName: SantecSPA.SPAModule.SaveDSPAFile
+  nameWithType: SPAModule.SaveDSPAFile
 - uid: SantecSPA.SPAModule.SaveOperationSettingsToFile(System.String)
   name: SaveOperationSettingsToFile(String)
   href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_SaveOperationSettingsToFile_System_String_
@@ -1620,3 +1746,16 @@ references:
   isSpec: "True"
   fullName: SantecSPA.SPAModule.SetTransmissionWDLData
   nameWithType: SPAModule.SetTransmissionWDLData
+- uid: SantecSPA.SPAModule.StopScan
+  name: StopScan()
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_StopScan
+  commentId: M:SantecSPA.SPAModule.StopScan
+  fullName: SantecSPA.SPAModule.StopScan()
+  nameWithType: SPAModule.StopScan()
+- uid: SantecSPA.SPAModule.StopScan*
+  name: StopScan
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_StopScan_
+  commentId: Overload:SantecSPA.SPAModule.StopScan
+  isSpec: "True"
+  fullName: SantecSPA.SPAModule.StopScan
+  nameWithType: SPAModule.StopScan
