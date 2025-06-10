@@ -14,7 +14,7 @@
 - If not valid, set to LimitMinWave and LimitMaxWave
 
 **MeasurementMode: 0, 1, 2, 3** <br>
-0 = Port 1, 1 = Port 2, 3 = Port 3, 4 = IL (Transmission)
+0 = Port 1, 1 = Port 2, 3 = Port 1+2 (if supported), 4 = IL (Transmission)
 
 **DefaultRefractiveIndexValue >= 1**
 - If not valid, set to 1
@@ -28,20 +28,25 @@
 **Gain: 0, 1, 2, 3, 4** <br>
 0 = auto, 1 = 0 dB, 2 = 4 dB, 3 = 9 dB, 4 = 13 dB
 
- <br>
+**DistanceRange: 5.0, 14.0, 30.0** <br>
+This is based on the Distance Range Table from `GetDistanceRangeFunction`.
+
+<br>
 
 ## Valid values for Connection INI
 
-**TSL Communication: USB, GPIB, LAN**
+**TSL Communication: `USB`, `GPIB`, `LAN`**
 
 If _TSL Communication = GPIB_, <br>
-   GPIBAddress = 0 - 30 <br>  <br>
-If _TSL Communication = USB_, <br>
-   USBDeviceID > 0 <br>  <br>
-If _TSL Communication = LAN_, <br>
-   IP and Port must be valid <br>
+   GPIBAddress = 0 - 30 <br>  
 
-SPA Device ID must be of form "Dev#", where # is > 1.
+If _TSL Communication = USB_, <br>
+   USBDeviceID > 0 <br>  
+
+If _TSL Communication = LAN_, <br>
+   IP and Port must be valid 
+
+SPA Device ID must be of form `Dev#`, where # is > 1.
 
    w2500fm, <br>
    w5pm, <br>
