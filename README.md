@@ -22,13 +22,13 @@ This SDK provides users with the necessary tools and resources to create innovat
 ### SDK details
 
 - **SantecSPA.dll**
-  - **Version**: 1.3.0.0
+  - **Version**: 1.3.1.0
 
 - **ComOFDR.dll**
-  - **Version**: 2.6.0.1
+  - **Version**: 2.8.0.0
 
 - **InstrumentDLL.dll**
-  - **Version**: 2.5.6.0
+  - **Version**: 2.5.7.0
 
 ---
 
