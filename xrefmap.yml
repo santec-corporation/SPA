@@ -1105,6 +1105,19 @@ references:
   isSpec: "True"
   fullName: SantecSPA.SPAModule.SPAModule
   nameWithType: SPAModule.SPAModule
+- uid: SantecSPA.SPAModule.CloseTSLShutter
+  name: CloseTSLShutter()
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_CloseTSLShutter
+  commentId: M:SantecSPA.SPAModule.CloseTSLShutter
+  fullName: SantecSPA.SPAModule.CloseTSLShutter()
+  nameWithType: SPAModule.CloseTSLShutter()
+- uid: SantecSPA.SPAModule.CloseTSLShutter*
+  name: CloseTSLShutter
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_CloseTSLShutter_
+  commentId: Overload:SantecSPA.SPAModule.CloseTSLShutter
+  isSpec: "True"
+  fullName: SantecSPA.SPAModule.CloseTSLShutter
+  nameWithType: SPAModule.CloseTSLShutter
 - uid: SantecSPA.SPAModule.Data
   name: Data
   href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_Data
@@ -1560,6 +1573,19 @@ references:
   isSpec: "True"
   fullName: SantecSPA.SPAModule.MeasureRL
   nameWithType: SPAModule.MeasureRL
+- uid: SantecSPA.SPAModule.OpenTSLShutter
+  name: OpenTSLShutter()
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_OpenTSLShutter
+  commentId: M:SantecSPA.SPAModule.OpenTSLShutter
+  fullName: SantecSPA.SPAModule.OpenTSLShutter()
+  nameWithType: SPAModule.OpenTSLShutter()
+- uid: SantecSPA.SPAModule.OpenTSLShutter*
+  name: OpenTSLShutter
+  href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_OpenTSLShutter_
+  commentId: Overload:SantecSPA.SPAModule.OpenTSLShutter
+  isSpec: "True"
+  fullName: SantecSPA.SPAModule.OpenTSLShutter
+  nameWithType: SPAModule.OpenTSLShutter
 - uid: SantecSPA.SPAModule.SaveDSPAFile(System.String)
   name: SaveDSPAFile(String)
   href: api/SantecSPA.SPAModule.html#SantecSPA_SPAModule_SaveDSPAFile_System_String_

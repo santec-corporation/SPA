@@ -54,6 +54,12 @@
                       <li>
                           <a href="../api/examples.html" title="Code Examples">Code Examples</a>
                       </li>
+                      <li>
+                          <a href="../api/validsettings.html" title="Valid Settings">Valid Settings</a>
+                      </li>
+                      <li>
+                          <a href="../api/errorcodes.html" title="Error Codes">Error Codes</a>
+                      </li>
                 </ul>    </div>
           </div>
         </nav>
@@ -154,8 +160,6 @@
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
   <a id="SantecSPA_SPAModule__ctor_" data-uid="SantecSPA.SPAModule.#ctor*"></a>
   <h4 id="SantecSPA_SPAModule__ctor" data-uid="SantecSPA.SPAModule.#ctor">SPAModule()</h4>
   <div class="markdown level1 summary"><p>Default constructor</p>
@@ -167,8 +171,6 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
   <a id="SantecSPA_SPAModule_Data_" data-uid="SantecSPA.SPAModule.Data*"></a>
   <h4 id="SantecSPA_SPAModule_Data" data-uid="SantecSPA.SPAModule.Data">Data</h4>
   <div class="markdown level1 summary"><p>Acquired Data</p>
@@ -193,8 +195,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_Instrument_" data-uid="SantecSPA.SPAModule.Instrument*"></a>
   <h4 id="SantecSPA_SPAModule_Instrument" data-uid="SantecSPA.SPAModule.Instrument">Instrument</h4>
   <div class="markdown level1 summary"><p>Control the Instruments (SPA and TSL)</p>
@@ -219,8 +219,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_Settings_" data-uid="SantecSPA.SPAModule.Settings*"></a>
   <h4 id="SantecSPA_SPAModule_Settings" data-uid="SantecSPA.SPAModule.Settings">Settings</h4>
   <div class="markdown level1 summary"><p>Operation Settings</p>
@@ -247,8 +245,31 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <a id="SantecSPA_SPAModule_CloseTSLShutter_" data-uid="SantecSPA.SPAModule.CloseTSLShutter*"></a>
+  <h4 id="SantecSPA_SPAModule_CloseTSLShutter" data-uid="SantecSPA.SPAModule.CloseTSLShutter">CloseTSLShutter()</h4>
+  <div class="markdown level1 summary"><p>Close the TSL shutter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CloseTSLShutter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Error code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="SantecSPA_SPAModule_ExecutePeakScan_" data-uid="SantecSPA.SPAModule.ExecutePeakScan*"></a>
   <h4 id="SantecSPA_SPAModule_ExecutePeakScan_System_Double_System_Double_System_Int32_System_Int32_System_Double____System_Double____" data-uid="SantecSPA.SPAModule.ExecutePeakScan(System.Double,System.Double,System.Int32,System.Int32,System.Double[]@,System.Double[]@)">ExecutePeakScan(Double, Double, Int32, Int32, out Double[], out Double[])</h4>
   <div class="markdown level1 summary"><p>Perform a Reflection Measurement scan, process it, then get the distance from the reference position to the first/last N peaks found within the specified range</p>
@@ -322,8 +343,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_ExecutePositionReference_" data-uid="SantecSPA.SPAModule.ExecutePositionReference*"></a>
   <h4 id="SantecSPA_SPAModule_ExecutePositionReference_System_Double_System_Double_System_Int32_System_Double__" data-uid="SantecSPA.SPAModule.ExecutePositionReference(System.Double,System.Double,System.Int32,System.Double@)">ExecutePositionReference(Double, Double, Int32, out Double)</h4>
   <div class="markdown level1 summary"><p>Perform a Reflection scan, process it, then get the position of the first/last peak found within the specified range</p>
@@ -385,8 +404,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_ExecuteReflectionMeasurement_" data-uid="SantecSPA.SPAModule.ExecuteReflectionMeasurement*"></a>
   <h4 id="SantecSPA_SPAModule_ExecuteReflectionMeasurement_System_Double____System_Double____" data-uid="SantecSPA.SPAModule.ExecuteReflectionMeasurement(System.Double[]@,System.Double[]@)">ExecuteReflectionMeasurement(out Double[], out Double[])</h4>
   <div class="markdown level1 summary"><p>Performs a reflectance scan and yields a spatially resolved reflectance trace with the resolution specified in settings.</p>
@@ -436,8 +453,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_ExecuteReflectionReference_" data-uid="SantecSPA.SPAModule.ExecuteReflectionReference*"></a>
   <h4 id="SantecSPA_SPAModule_ExecuteReflectionReference_System_Double__" data-uid="SantecSPA.SPAModule.ExecuteReflectionReference(System.Double@)">ExecuteReflectionReference(out Double)</h4>
   <div class="markdown level1 summary"><p>Performs a reflectance scan and calculates a calibration factor to correct for the reflectance trace. 
@@ -482,8 +497,6 @@ It is suggested that this scan is performed with nothing connected to the front 
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_ExecuteReflectionWDLMeasurement_" data-uid="SantecSPA.SPAModule.ExecuteReflectionWDLMeasurement*"></a>
   <h4 id="SantecSPA_SPAModule_ExecuteReflectionWDLMeasurement_System_Double_System_Double_System_Double____System_Double____" data-uid="SantecSPA.SPAModule.ExecuteReflectionWDLMeasurement(System.Double,System.Double,System.Double[]@,System.Double[]@)">ExecuteReflectionWDLMeasurement(Double, Double, out Double[], out Double[])</h4>
   <div class="markdown level1 summary"><p>Computes the wavelength component for the specified region of the reflectance trace. 
@@ -546,8 +559,6 @@ The result will be reflectance value with respect to the wavelength range of the
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_ExecuteTransmissionMeasurement_" data-uid="SantecSPA.SPAModule.ExecuteTransmissionMeasurement*"></a>
   <h4 id="SantecSPA_SPAModule_ExecuteTransmissionMeasurement_System_Double____System_Double____" data-uid="SantecSPA.SPAModule.ExecuteTransmissionMeasurement(System.Double[]@,System.Double[]@)">ExecuteTransmissionMeasurement(out Double[], out Double[])</h4>
   <div class="markdown level1 summary"><p>Performs a Transmission Measurement sweep. 
@@ -598,8 +609,6 @@ Requires a reference to be connected from output port 1 to port 2.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_ExecuteTransmissionReference_" data-uid="SantecSPA.SPAModule.ExecuteTransmissionReference*"></a>
   <h4 id="SantecSPA_SPAModule_ExecuteTransmissionReference_System_Double____System_Double____System_Double__" data-uid="SantecSPA.SPAModule.ExecuteTransmissionReference(System.Double[]@,System.Double[]@,System.Double@)">ExecuteTransmissionReference(out Double[], out Double[], out Double)</h4>
   <div class="markdown level1 summary"><p>Performs a Transmission Reference sweep. 
@@ -656,8 +665,6 @@ Requires a reference to be connected from output port 1 to port 2.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_ExecuteTransmissionWDLMeasurement_" data-uid="SantecSPA.SPAModule.ExecuteTransmissionWDLMeasurement*"></a>
   <h4 id="SantecSPA_SPAModule_ExecuteTransmissionWDLMeasurement_System_Double_System_Double_System_Double____System_Double____" data-uid="SantecSPA.SPAModule.ExecuteTransmissionWDLMeasurement(System.Double,System.Double,System.Double[]@,System.Double[]@)">ExecuteTransmissionWDLMeasurement(Double, Double, out Double[], out Double[])</h4>
   <div class="markdown level1 summary"><p>This performs a wavelength sweep and yields the insertion loss with respect to wavelength with a wavelength resolution as defined in the settings.</p>
@@ -717,8 +724,6 @@ Requires a reference to be connected from output port 1 to port 2.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_ExecuteTransmissionWDLReference_" data-uid="SantecSPA.SPAModule.ExecuteTransmissionWDLReference*"></a>
   <h4 id="SantecSPA_SPAModule_ExecuteTransmissionWDLReference_System_Double_System_Double_System_Double____System_Double____" data-uid="SantecSPA.SPAModule.ExecuteTransmissionWDLReference(System.Double,System.Double,System.Double[]@,System.Double[]@)">ExecuteTransmissionWDLReference(Double, Double, out Double[], out Double[])</h4>
   <div class="markdown level1 summary"><p>References the Transmission WDL in the specified range.
@@ -781,11 +786,9 @@ Requires a reference to be connected from output port 1 to port 2.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetDistanceRangeTable_" data-uid="SantecSPA.SPAModule.GetDistanceRangeTable*"></a>
   <h4 id="SantecSPA_SPAModule_GetDistanceRangeTable_System_Double____" data-uid="SantecSPA.SPAModule.GetDistanceRangeTable(System.Double[]@)">GetDistanceRangeTable(out Double[])</h4>
-  <div class="markdown level1 summary"><p>Get the table of available distance ranges. Use with SetOperationalSettingValue(&quot;DistanceRange&quot;, value) to select a range from the table.</p>
+  <div class="markdown level1 summary"><p>Get the table of available distance ranges. Use with SetOperationSettingValue(&quot;DistanceRange&quot;, value) to select a range from the table.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -826,8 +829,6 @@ Requires a reference to be connected from output port 1 to port 2.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetOperationSettingsValue_" data-uid="SantecSPA.SPAModule.GetOperationSettingsValue*"></a>
   <h4 id="SantecSPA_SPAModule_GetOperationSettingsValue_System_String_System_String__" data-uid="SantecSPA.SPAModule.GetOperationSettingsValue(System.String,System.String@)">GetOperationSettingsValue(String, out String)</h4>
   <div class="markdown level1 summary"><p>Get the specified settings value as a string</p>
@@ -875,8 +876,6 @@ Requires a reference to be connected from output port 1 to port 2.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetPeaks_" data-uid="SantecSPA.SPAModule.GetPeaks*"></a>
   <h4 id="SantecSPA_SPAModule_GetPeaks_System_Double_System_Double_System_Double____System_Double____System_Int32__" data-uid="SantecSPA.SPAModule.GetPeaks(System.Double,System.Double,System.Double[]@,System.Double[]@,System.Int32@)">GetPeaks(Double, Double, out Double[], out Double[], out Int32)</h4>
   <div class="markdown level1 summary"><p>Analyzes the reflectance trace for reflectance peaks. 
@@ -945,8 +944,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetRawMeasurementData_" data-uid="SantecSPA.SPAModule.GetRawMeasurementData*"></a>
   <h4 id="SantecSPA_SPAModule_GetRawMeasurementData_System_Double____System_Boolean_" data-uid="SantecSPA.SPAModule.GetRawMeasurementData(System.Double[]@,System.Boolean)">GetRawMeasurementData(out Double[], Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the raw frequeny domain data from the most recent scan</p>
@@ -996,8 +993,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetReflectanceData_" data-uid="SantecSPA.SPAModule.GetReflectanceData*"></a>
   <h4 id="SantecSPA_SPAModule_GetReflectanceData_System_Double____System_Double____System_Boolean_" data-uid="SantecSPA.SPAModule.GetReflectanceData(System.Double[]@,System.Double[]@,System.Boolean)">GetReflectanceData(out Double[], out Double[], Boolean)</h4>
   <div class="markdown level1 summary"><p>Process the most recent raw reflectance data and yields the reflectance trace in spatial domain.</p>
@@ -1053,8 +1048,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetReflectanceReferenceOffset_" data-uid="SantecSPA.SPAModule.GetReflectanceReferenceOffset*"></a>
   <h4 id="SantecSPA_SPAModule_GetReflectanceReferenceOffset_System_Double__" data-uid="SantecSPA.SPAModule.GetReflectanceReferenceOffset(System.Double@)">GetReflectanceReferenceOffset(out Double)</h4>
   <div class="markdown level1 summary"><p>Use the current raw scan data in memory to calculate and get the reflectance reference offset</p>
@@ -1098,8 +1091,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetReflectionWDLData_" data-uid="SantecSPA.SPAModule.GetReflectionWDLData*"></a>
   <h4 id="SantecSPA_SPAModule_GetReflectionWDLData_System_Double_System_Double_System_Double____System_Double____System_Boolean_" data-uid="SantecSPA.SPAModule.GetReflectionWDLData(System.Double,System.Double,System.Double[]@,System.Double[]@,System.Boolean)">GetReflectionWDLData(Double, Double, out Double[], out Double[], Boolean)</h4>
   <div class="markdown level1 summary"><p>Process current raw Reflection data stored in memory and get the processed RL WDL data.</p>
@@ -1167,8 +1158,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetSpaDeviceList_" data-uid="SantecSPA.SPAModule.GetSpaDeviceList*"></a>
   <h4 id="SantecSPA_SPAModule_GetSpaDeviceList_System_String____" data-uid="SantecSPA.SPAModule.GetSpaDeviceList(System.String[]@)">GetSpaDeviceList(ref String[])</h4>
   <div class="markdown level1 summary"><p>Get a list of SPA devices. Use this with connection settings to specify which SPA device to use.</p>
@@ -1212,8 +1201,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetTransmissionData_" data-uid="SantecSPA.SPAModule.GetTransmissionData*"></a>
   <h4 id="SantecSPA_SPAModule_GetTransmissionData_System_Double____System_Double____System_Boolean_" data-uid="SantecSPA.SPAModule.GetTransmissionData(System.Double[]@,System.Double[]@,System.Boolean)">GetTransmissionData(out Double[], out Double[], Boolean)</h4>
   <div class="markdown level1 summary"><p>Get Transmission spatial data</p>
@@ -1269,8 +1256,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetTransmissionReferencePeak_" data-uid="SantecSPA.SPAModule.GetTransmissionReferencePeak*"></a>
   <h4 id="SantecSPA_SPAModule_GetTransmissionReferencePeak_System_Double__" data-uid="SantecSPA.SPAModule.GetTransmissionReferencePeak(System.Double@)">GetTransmissionReferencePeak(out Double)</h4>
   <div class="markdown level1 summary"><p>Use the current Transmission raw scan data in memory to calculate and get the reference peak position</p>
@@ -1314,8 +1299,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetTransmissionWDLData_" data-uid="SantecSPA.SPAModule.GetTransmissionWDLData*"></a>
   <h4 id="SantecSPA_SPAModule_GetTransmissionWDLData_System_Double_System_Double_System_Double____System_Double____System_Boolean_" data-uid="SantecSPA.SPAModule.GetTransmissionWDLData(System.Double,System.Double,System.Double[]@,System.Double[]@,System.Boolean)">GetTransmissionWDLData(Double, Double, out Double[], out Double[], Boolean)</h4>
   <div class="markdown level1 summary"><p>Process current raw Transmission data stored in memory and get the processed IL WDL data.</p>
@@ -1383,8 +1366,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_GetTslDeviceList_" data-uid="SantecSPA.SPAModule.GetTslDeviceList*"></a>
   <h4 id="SantecSPA_SPAModule_GetTslDeviceList_System_String____" data-uid="SantecSPA.SPAModule.GetTslDeviceList(System.String[]@)">GetTslDeviceList(ref String[])</h4>
   <div class="markdown level1 summary"></div>
@@ -1425,8 +1406,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_Initialize_" data-uid="SantecSPA.SPAModule.Initialize*"></a>
   <h4 id="SantecSPA_SPAModule_Initialize_System_String_" data-uid="SantecSPA.SPAModule.Initialize(System.String)">Initialize(String)</h4>
   <div class="markdown level1 summary"><p>Initialize communication with TSL and SPA using connection settings from INI file</p>
@@ -1470,8 +1449,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_Initialize_" data-uid="SantecSPA.SPAModule.Initialize*"></a>
   <h4 id="SantecSPA_SPAModule_Initialize_System_String_System_String_System_UInt32_System_UInt32_System_String_System_UInt32_" data-uid="SantecSPA.SPAModule.Initialize(System.String,System.String,System.UInt32,System.UInt32,System.String,System.UInt32)">Initialize(String, String, UInt32, UInt32, String, UInt32)</h4>
   <div class="markdown level1 summary"><p>Initialize communication with TSL and SPA using specified parameters</p>
@@ -1545,8 +1522,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_LoadDSPAFile_" data-uid="SantecSPA.SPAModule.LoadDSPAFile*"></a>
   <h4 id="SantecSPA_SPAModule_LoadDSPAFile_System_String_" data-uid="SantecSPA.SPAModule.LoadDSPAFile(System.String)">LoadDSPAFile(String)</h4>
   <div class="markdown level1 summary"><p>Load a DSPA data file</p>
@@ -1589,8 +1564,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_LoadOperationSettingsFromFile_" data-uid="SantecSPA.SPAModule.LoadOperationSettingsFromFile*"></a>
   <h4 id="SantecSPA_SPAModule_LoadOperationSettingsFromFile_System_String_" data-uid="SantecSPA.SPAModule.LoadOperationSettingsFromFile(System.String)">LoadOperationSettingsFromFile(String)</h4>
   <div class="markdown level1 summary"><p>Load settings from file</p>
@@ -1634,8 +1607,6 @@ Identifies peaks above a certain power threshold and minimum width and outputs t
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_MeasureIL_" data-uid="SantecSPA.SPAModule.MeasureIL*"></a>
   <h4 id="SantecSPA_SPAModule_MeasureIL_System_Double_System_Double_System_Double__" data-uid="SantecSPA.SPAModule.MeasureIL(System.Double,System.Double,System.Double@)">MeasureIL(Double, Double, out Double)</h4>
   <div class="markdown level1 summary"><p>Calculates the insertion loss of an area of the reflectance trace. 
@@ -1692,8 +1663,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_MeasurePeakDistance_" data-uid="SantecSPA.SPAModule.MeasurePeakDistance*"></a>
   <h4 id="SantecSPA_SPAModule_MeasurePeakDistance_System_Double_System_Double_System_Double_System_Int32_System_Int32_System_Double____System_Double____" data-uid="SantecSPA.SPAModule.MeasurePeakDistance(System.Double,System.Double,System.Double,System.Int32,System.Int32,System.Double[]@,System.Double[]@)">MeasurePeakDistance(Double, Double, Double, Int32, Int32, out Double[], out Double[])</h4>
   <div class="markdown level1 summary"><p>Using last saved reflection data, get the distance from the reference position to the first/last N peaks found within the specified range</p>
@@ -1773,8 +1742,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_MeasureRL_" data-uid="SantecSPA.SPAModule.MeasureRL*"></a>
   <h4 id="SantecSPA_SPAModule_MeasureRL_System_Double_System_Double_System_Double__" data-uid="SantecSPA.SPAModule.MeasureRL(System.Double,System.Double,System.Double@)">MeasureRL(Double, Double, out Double)</h4>
   <div class="markdown level1 summary"><p>Calculates the return loss of an area of the reflectance trace.</p>
@@ -1830,8 +1797,31 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <a id="SantecSPA_SPAModule_OpenTSLShutter_" data-uid="SantecSPA.SPAModule.OpenTSLShutter*"></a>
+  <h4 id="SantecSPA_SPAModule_OpenTSLShutter" data-uid="SantecSPA.SPAModule.OpenTSLShutter">OpenTSLShutter()</h4>
+  <div class="markdown level1 summary"><p>Open the TSL shutter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenTSLShutter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Error code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="SantecSPA_SPAModule_SaveDSPAFile_" data-uid="SantecSPA.SPAModule.SaveDSPAFile*"></a>
   <h4 id="SantecSPA_SPAModule_SaveDSPAFile_System_String_" data-uid="SantecSPA.SPAModule.SaveDSPAFile(System.String)">SaveDSPAFile(String)</h4>
   <div class="markdown level1 summary"><p>Save a DSPA data file</p>
@@ -1875,8 +1865,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SaveOperationSettingsToFile_" data-uid="SantecSPA.SPAModule.SaveOperationSettingsToFile*"></a>
   <h4 id="SantecSPA_SPAModule_SaveOperationSettingsToFile_System_String_" data-uid="SantecSPA.SPAModule.SaveOperationSettingsToFile(System.String)">SaveOperationSettingsToFile(String)</h4>
   <div class="markdown level1 summary"><p>Save settings from file</p>
@@ -1920,8 +1908,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_Scan_" data-uid="SantecSPA.SPAModule.Scan*"></a>
   <h4 id="SantecSPA_SPAModule_Scan_System_Boolean_" data-uid="SantecSPA.SPAModule.Scan(System.Boolean)">Scan(Boolean)</h4>
   <div class="markdown level1 summary"><p>Performs a single OFDR scan and saves raw data in memory.</p>
@@ -1965,8 +1951,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetOperationSettingsValue_" data-uid="SantecSPA.SPAModule.SetOperationSettingsValue*"></a>
   <h4 id="SantecSPA_SPAModule_SetOperationSettingsValue_System_String_System_Boolean_" data-uid="SantecSPA.SPAModule.SetOperationSettingsValue(System.String,System.Boolean)">SetOperationSettingsValue(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Set the specified setting to the specified value</p>
@@ -2014,8 +1998,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetOperationSettingsValue_" data-uid="SantecSPA.SPAModule.SetOperationSettingsValue*"></a>
   <h4 id="SantecSPA_SPAModule_SetOperationSettingsValue_System_String_System_Double_" data-uid="SantecSPA.SPAModule.SetOperationSettingsValue(System.String,System.Double)">SetOperationSettingsValue(String, Double)</h4>
   <div class="markdown level1 summary"><p>Set the specified setting to the specified value</p>
@@ -2063,8 +2045,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetOperationSettingsValue_" data-uid="SantecSPA.SPAModule.SetOperationSettingsValue*"></a>
   <h4 id="SantecSPA_SPAModule_SetOperationSettingsValue_System_String_System_Int32_" data-uid="SantecSPA.SPAModule.SetOperationSettingsValue(System.String,System.Int32)">SetOperationSettingsValue(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Set the specified setting to the specified value</p>
@@ -2112,8 +2092,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetOperationSettingsValue_" data-uid="SantecSPA.SPAModule.SetOperationSettingsValue*"></a>
   <h4 id="SantecSPA_SPAModule_SetOperationSettingsValue_System_String_System_String_" data-uid="SantecSPA.SPAModule.SetOperationSettingsValue(System.String,System.String)">SetOperationSettingsValue(String, String)</h4>
   <div class="markdown level1 summary"><p>Set the specified setting to the specified value</p>
@@ -2163,8 +2141,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetRawMeasurementData_" data-uid="SantecSPA.SPAModule.SetRawMeasurementData*"></a>
   <h4 id="SantecSPA_SPAModule_SetRawMeasurementData_System_Double___System_Boolean_" data-uid="SantecSPA.SPAModule.SetRawMeasurementData(System.Double[],System.Boolean)">SetRawMeasurementData(Double[], Boolean)</h4>
   <div class="markdown level1 summary"><p>Set the raw scan data stored in memory.</p>
@@ -2214,8 +2190,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetReflectanceData_" data-uid="SantecSPA.SPAModule.SetReflectanceData*"></a>
   <h4 id="SantecSPA_SPAModule_SetReflectanceData_System_Double___System_Double___System_Boolean_" data-uid="SantecSPA.SPAModule.SetReflectanceData(System.Double[],System.Double[],System.Boolean)">SetReflectanceData(Double[], Double[], Boolean)</h4>
   <div class="markdown level1 summary"><p>Set the processed spatial domain reflectance data in memory.</p>
@@ -2271,8 +2245,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetReflectanceReferenceOffset_" data-uid="SantecSPA.SPAModule.SetReflectanceReferenceOffset*"></a>
   <h4 id="SantecSPA_SPAModule_SetReflectanceReferenceOffset_System_Double_" data-uid="SantecSPA.SPAModule.SetReflectanceReferenceOffset(System.Double)">SetReflectanceReferenceOffset(Double)</h4>
   <div class="markdown level1 summary"><p>Set the reflectance reference offset</p>
@@ -2316,8 +2288,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetReflectionWDLData_" data-uid="SantecSPA.SPAModule.SetReflectionWDLData*"></a>
   <h4 id="SantecSPA_SPAModule_SetReflectionWDLData_System_Double___System_Double___System_Boolean_" data-uid="SantecSPA.SPAModule.SetReflectionWDLData(System.Double[],System.Double[],System.Boolean)">SetReflectionWDLData(Double[], Double[], Boolean)</h4>
   <div class="markdown level1 summary"><p>Set the processed Reflection WDL (RL WDL) data in memory.</p>
@@ -2373,8 +2343,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetRefractiveIndexRegion_" data-uid="SantecSPA.SPAModule.SetRefractiveIndexRegion*"></a>
   <h4 id="SantecSPA_SPAModule_SetRefractiveIndexRegion_System_Double_System_Double_System_Double_" data-uid="SantecSPA.SPAModule.SetRefractiveIndexRegion(System.Double,System.Double,System.Double)">SetRefractiveIndexRegion(Double, Double, Double)</h4>
   <div class="markdown level1 summary"><p>Set the refractive index for the specified region</p>
@@ -2430,8 +2398,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetTransmissionReferencePeak_" data-uid="SantecSPA.SPAModule.SetTransmissionReferencePeak*"></a>
   <h4 id="SantecSPA_SPAModule_SetTransmissionReferencePeak_System_Double_" data-uid="SantecSPA.SPAModule.SetTransmissionReferencePeak(System.Double)">SetTransmissionReferencePeak(Double)</h4>
   <div class="markdown level1 summary"><p>Set the IL WDL reference.</p>
@@ -2475,8 +2441,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_SetTransmissionWDLData_" data-uid="SantecSPA.SPAModule.SetTransmissionWDLData*"></a>
   <h4 id="SantecSPA_SPAModule_SetTransmissionWDLData_System_Double___System_Double___System_Boolean_" data-uid="SantecSPA.SPAModule.SetTransmissionWDLData(System.Double[],System.Double[],System.Boolean)">SetTransmissionWDLData(Double[], Double[], Boolean)</h4>
   <div class="markdown level1 summary"><p>Set the processed IL WDL data in memory.</p>
@@ -2532,8 +2496,6 @@ Uses the integration and averaging limits specified in the settings.</p>
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SantecSPA_SPAModule_StopScan_" data-uid="SantecSPA.SPAModule.StopScan*"></a>
   <h4 id="SantecSPA_SPAModule_StopScan" data-uid="SantecSPA.SPAModule.StopScan">StopScan()</h4>
   <div class="markdown level1 summary"><p>Stop the current scan and reset from standby mode.</p>
@@ -2564,10 +2526,6 @@ Uses the integration and averaging limits specified in the settings.</p>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>

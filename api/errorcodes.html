@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Error Codes </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Error Codes ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -114,8 +114,41 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="error-codes"><strong>Error Codes</strong></h1>
 
-</article>
+<h2 id="settings-errors">Settings Errors</h2>
+<pre><code class="lang-txt">SetOperationSettings() or LoadOperationSettingsINI()
+Get list of encountered error codes using GetSettingsErrors
+-10 = StartWave not in limits
+-11 = StopWave not in limits
+-12 = StartWave &gt;= StopWave
+-13 = StartWave or StopWave in water absorption region
+-14 = Measurement Mode not valid (valid 0 - 3)
+-15 = Refractive Index not valid (valid &gt; 1)
+-16 = Power not valid (valid -3 to 10)
+-17 = StartWave or StopWave &lt;= 0
+</code></pre><h2 id="connection-errors">Connection Errors</h2>
+<pre><code class="lang-txt">LoadConnectionSettingsFromFile()
+-1 = File does not exist
+-2 = Invalid file format
+-3 = Unable to parse file
+-4 = Invalid TSL Type
+-5 = Invalid GPIB Address
+-6 = Invalid USB Device ID
+</code></pre><h2 id="instrument-errors">Instrument Errors</h2>
+<pre><code class="lang-txt">SetScanSettings() and StartScan()
+-1 = Unable to read information from device
+-10 = Unable to read information from device
+-14 = Unable to read information from device
+-40 = Unable to start measurement (check TSL is not dark)
+-200 = TSL is currently not in a sweepable state
+-222 = Out of settable range
+int.MinValue = Unexpected exception
+
+GetSamplingData()
+-1 = Sample count = 0
+-2 = High-frequency triggering error
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
