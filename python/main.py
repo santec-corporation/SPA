@@ -72,7 +72,7 @@ spa.Initialize("Connection.ini")
 # Perform a reflection reference scan using the base functions
 
 # Set to Reflection Mode Port 1
-spa.SetOperationSettingsValue("Port", 1)
+spa.SetOperationSettingsValue("MeasurementMode", 1)
 
 # Set wavelength range
 spa.SetOperationSettingsValue("StartWave", 1500)

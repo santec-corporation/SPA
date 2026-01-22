@@ -48,14 +48,16 @@ If _TSL Communication = LAN_, <br>
 
 SPA Device ID must be of form `Dev#`, where # is > 1.
 
-   w2500fm, <br>
-   w5pm, <br>
-   w10pm, <br>
-   w20pm, <br>
-   w40pm, <br>
-   w80pm, <br>
-   w160pm, <br>
-   w320pm, <br>
-   w640pm, <br>
-   w1281pm, <br>
-   w2564pm
+**WDLResolution: 0 - 10** <br>
+
+0 = w2500fm, <br>
+1 = w5pm, <br>
+2 = w10pm, <br>
+3 = w20pm, <br>
+4 = w40pm, <br>
+5 = w80pm, <br>
+6 = w160pm, <br>
+7 = w320pm, <br>
+8 = w640pm, <br>
+9 = w1281pm, <br>
+10 = w2564pm
