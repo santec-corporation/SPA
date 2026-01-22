@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Valid Settings </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Valid Settings ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -114,8 +114,116 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="valid-settings"><strong>Valid Settings</strong></h1>
 
-</article>
+<h2 id="valid-settings-for-settings-ini-and-setoperationsettingsvalue">Valid Settings for Settings INI and SetOperationSettingsValue()</h2>
+<pre><code class="lang-txt">
+LimitMinWave &lt;= StartWave &lt;= LimitMaxWave
+- Floor StartWave to LimitMinWave
+
+LimitMinWave &lt;= StopWave &lt;= LimitMaxWave
+- Ceiling StopWave to LimitMaxWave
+
+StartWave &gt;= StopWave
+- If not valid, set StartWave and StopWave to LimitMinWave and LimitMaxWave resp.
+
+1350 &lt;= StartWave &lt;= 1420, 1350 &lt;= StopWave &lt;= 1420
+- Water Absorption Wavelengths
+- If not valid, set to LimitMinWave and LimitMaxWave
+
+MeasurementMode: 0, 1, 2, 3
+0 = Port 1, 1 = Port 2, 3 = Port 3, 4 = IL (Transmission)
+
+DefaultRefractiveIndexValue &gt;= 1
+- If not valid, set to 1
+
+AverageCount &gt;= 1
+- If not valid, set to 1
+
+-3 &lt;= Power &lt;= 10
+- If not valid, set to -3
+
+Gain: 0, 1, 2, 3, 4
+0 = auto, 1 = 0 dB, 2 = 4 dB, 3 = 9 dB, 4 = 13 dB
+
+WdlResolution: 0 - 10
+
+0 = w2500fm,
+1 = w5pm,
+2 = w10pm,
+3 = w20pm,
+4 = w40pm,
+5 = w80pm,
+6 = w160pm,
+7 = w320pm,
+8 = w640pm,
+9 = w1281pm,
+10 =  w2564pm
+
+DistanceRange: 5.0, 14.0. 30.0 (typical)
+Use GetDistanceRangeTable to get list of available values.
+</code></pre><h2 id="valid-settings-for-connection-ini-and-initialize">Valid Settings for Connection INI and Initialize()</h2>
+<pre><code class="lang-txt">Valid values for Settings INI
+
+LimitMinWave &lt;= StartWave &lt;= LimitMaxWave
+- Floor StartWave to LimitMinWave
+
+LimitMinWave &lt;= StopWave &lt;= LimitMaxWave
+- Ceiling StopWave to LimitMaxWave
+
+StartWave &gt;= StopWave
+- If not valid, set StartWave and StopWave to LimitMinWave and LimitMaxWave resp.
+
+1350 &lt;= StartWave &lt;= 1420, 1350 &lt;= StopWave &lt;= 1420
+- Water Absorption Wavelengths
+- If not valid, set to LimitMinWave and LimitMaxWave
+
+MeasurementMode: 0, 1, 2, 3
+0 = Port 1, 1 = Port 2, 3 = Port 3, 4 = IL (Transmission)
+
+DefaultRefractiveIndexValue &gt;= 1
+- If not valid, set to 1
+
+AverageCount &gt;= 1
+- If not valid, set to 1
+
+-3 &lt;= Power &lt;= 10
+- If not valid, set to -3
+
+Gain: 0, 1, 2, 3, 4
+0 = auto, 1 = 0 dB, 2 = 4 dB, 3 = 9 dB, 4 = 13 dB
+
+WdlResolution: 0 - 10
+
+0 = w2500fm,
+1 = w5pm,
+2 = w10pm,
+3 = w20pm,
+4 = w40pm,
+5 = w80pm,
+6 = w160pm,
+7 = w320pm,
+8 = w640pm,
+9 = w1281pm,
+10 =  w2564pm
+
+DistanceRange: 5.0, 14.0. 30.0 (typical)
+Use GetDistanceRangeTable to get list of available values.
+
+
+Valid values for Connection INI
+
+TSL Communication: USB, GPIB, LAN
+
+If TSL Communication = GPIB, GPIBAddress = 0 - 30
+If TSL Communication = USB, USBDeviceID &gt; 0
+If TSL Communication = LAN, IP and Port must be valid
+
+SPA Device ID must be of form &quot;Dev#&quot; where # is &gt; 1
+
+
+
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

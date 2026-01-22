@@ -5,14 +5,26 @@
   "files": [
     {
       "type": "Conceptual",
+      "source_relative_path": "api/errorcodes.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/errorcodes.html",
+          "hash": "YCQLFdITBecSmxilNN299892qRIflXcGbFvrVpK/0Kg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "api/examples.md",
       "output": {
         ".html": {
           "relative_path": "api/examples.html",
-          "hash": "uEyZZtF35ilXa3oUvb93IPzmUNe5Wp5udbFdFrHov/Y="
+          "hash": "CnO4eHBbUnutw2dNbNWgja7P/+lUw08W/+NA2fszEDc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -21,10 +33,22 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "bbtzYuAVJ918pBtwFmDfshEPaGK854wI9F0Kz+NEXmQ="
+          "hash": "SQQT2XclPY1Pz4pO2Hl9bhs/6oVnJ9FWtdFwCQn7VZQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/validsettings.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/validsettings.html",
+          "hash": "qMbw9xc7l/Ea38EOSrJhmTrr5fxFT1tNtBIQo2EkBqw="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -33,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "Ofeh0t0GD3bl57bs58rTptXpdf4azexma+5U0x+CRIs="
+          "hash": "E3Ptur3eGGGcg3k5y8OTX9ZceBTTF3kihgNtvLGCFuU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,10 +72,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "wE3a/6w3JImDXrYVmye+PCLwQo/qj/thsPdpO1IqJ4s="
+          "hash": "eIP06kRsF9VTQuI9Pp90cjJgcZK5bpR86HvNpvvhjj4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,10 +84,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.Connection.html",
-          "hash": "1jO83ev8KQmbidMV+/de5jFv2lLDOEQV44m/cUWAFRw="
+          "hash": "MSH8H5IW5G5Fl8RVO0A6kEW5S45Nxr8Hyqn4OC1n3WM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,10 +96,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.Data.html",
-          "hash": "yLW051CLWVelCo9qTXu0t7ljrN871mvkxXdYyUmGPtc="
+          "hash": "7DCeiUV+omjDTOqZg03ugVlD8m5iSp8CqHVlye3fATc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,10 +108,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.Instrument.html",
-          "hash": "7oce34jHBBzVet8Q48vrkevpUB/6RdeCSIqtkXlJuxM="
+          "hash": "mntAGO2IeLbhGdBhwgbkgTlqcXQcFrqJpGnETf9nnzI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,10 +120,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.SPAModule.html",
-          "hash": "K4Ec+CUHStSto3UdypR/gXPN0BmN1xOADBmrZiOw39U="
+          "hash": "pqgdQExl0uOd0XZ92VssCDuxkYRvMz13WUKgawWuM1M="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -108,10 +132,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.Settings.html",
-          "hash": "S2wzCychCG12INbQN3s2NSOICdKpPER/2zS4YBd0Jy8="
+          "hash": "VC6F3y2T5GJqajh9aDVIywjxCP/s8aXGCLYhp1M34iA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,35 +144,33 @@
       "output": {
         ".html": {
           "relative_path": "api/SantecSPA.html",
-          "hash": "i3K7ofr1N5f78Q99Ge9+Nf0pUeqV65iYZwj/1YQpWDQ="
+          "hash": "YcjN8HooO5604KGOrPUKMD6mUmPkp2KrPicRcGeXu8M="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     }
   ],
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 6,
-          "skipped_file_count": 0
+          "skipped_file_count": 6
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 6
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -161,8 +183,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
