@@ -1,3 +1,9 @@
+## SPA SDK v1.4.1
+- Added support for SPA-110 with reduced switches
+- New functions
+	- `CloseTSLShutter()`
+	- `OpenTSLShutter()`
+
 ## SPA SDK v1.3.0
 
 - Added support for SPA-110
